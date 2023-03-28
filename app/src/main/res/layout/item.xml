@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:theme="@style/Theme.AppCompat.DayNight"
+tools:context="com.example.WhatsApp.MainActivity">
+
+
+
+<TextView
+    android:id="@+id/btAnshul"
+    android:layout_width="90dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:shadowColor="@color/black"
+    android:text="Anshul"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="@+id/btThankYou"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+<TextView
+    android:id="@+id/btThankYou"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:text="Thank you"
+    android:textSize="14sp"
+    android:textStyle="normal"
+    app:layout_constraintBottom_toBottomOf="@+id/Monkey1"
+    app:layout_constraintLeft_toRightOf="@+id/Monkey1"
+    app:layout_constraintRight_toRightOf="@id/btYesterday2"
+    app:layout_constraintTop_toBottomOf="@+id/btAnshul" />
+
+<TextView
+    android:id="@+id/btYesterday2"
+    android:layout_width="50dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+    android:text="Yesterday"
+    android:textAlignment="center"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/btAnshul"
+    app:layout_constraintBottom_toBottomOf="@+id/btAnshul"
+
+    android:textSize="11sp"
+    android:textStyle="normal"
+    tools:layout_editor_absoluteX="335dp"
+    tools:layout_editor_absoluteY="66dp" />
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/Monkey1"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_margin="10dp"
+    android:src="@drawable/monkey"
+    app:civ_border_color="#FF000000"
+    app:layout_constraintBottom_toBottomOf="@+id/btThankYou"
+    app:layout_constraintRight_toRightOf="@+id/btThankYou"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/btAnshul" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
